@@ -1,0 +1,5 @@
+Program Demo;
+Begin
+x = 10 + 11 * 101;
+y = x^2 - (101 - x);
+End

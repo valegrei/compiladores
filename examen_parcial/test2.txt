@@ -1,0 +1,6 @@
+Program ejemplo;
+begin
+x = 10 + 111;
+y = x ^2 + (x+100);
+z = 1000 - 1;
+end
