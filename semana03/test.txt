@@ -1,0 +1,9 @@
+libreria#uno.x#
+libreria#dos.x#
+Programa Ejemplo;
+Variables Real x,y,z;
+Inicio
+x = 2.3E1;
+y = 1.2E4 - (x^2 - 2.3E2) ;
+z = x + (y - 1.2E4) ;
+Fin
