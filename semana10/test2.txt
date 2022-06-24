@@ -1,0 +1,6 @@
+Algoritmo Ejemplo2
+inicioAlgoritmo
+    varx=5.05 + 4.95.
+    vary=12/varx - 0.2.
+    varz=1.5 + varx * 2 - vary.
+finAlgoritmo.

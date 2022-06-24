@@ -1,0 +1,6 @@
+Algoritmo Demo
+inicioAlgoritmo
+    varx=18.
+    vary=varx-5*4.
+    varz=varx/vary-1.
+finAlgoritmo.
