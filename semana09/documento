@@ -1,0 +1,6 @@
+Program Ejemplo;
+Begin
+    x := 4;
+    y:=5;
+    z:=10;
+End.
