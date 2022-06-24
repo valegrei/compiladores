@@ -1,0 +1,6 @@
+[
+    x := 1.
+    y := x + 3.
+    IMPRIMIR: x.
+    IMPRIMIR: y.
+]
