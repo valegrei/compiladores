@@ -1,0 +1,11 @@
+Program MiProg;
+Begin
+    x:=7;
+    y:=6;
+    if y>x then
+        Begin
+            a:=2;
+            b:=3;
+        End
+    z:=6;
+End.
