@@ -56,7 +56,9 @@ S: PROGRAMA ID ';' INICIO listaInstr FIN '.' ;
 listaInstr: instr listaInstr
     | ;
 instr: if-st | asig;
-if-st: SI cond {generarCodigo(SALTARIF,$2,'?','-'); $$=cx;} ENTONCES bloque {generarCodigo(SALTAR,'?','-','-'); $$=cx;TCodigo[$3].a2=cx+1; } else-st {TCodigo[$6].a1=cx+1;};
+if-st: SI cond {generarCodigo(SALTARIF,$2,'?','-'); $$=cx;} ENTONCES bloque 
+    {generarCodigo(SALTAR,'?','-','-'); $$=cx;TCodigo[$3].a2=cx+1; }
+    else-st {TCodigo[$6].a1=cx+1;};
 else-st: SINO bloque | ;
 bloque: INICIO listaInstr FIN;
 cond: expr '>' expr {int i=genVarTemp(); generarCodigo(MAYOR,i,$1,$3); $$=i;};
