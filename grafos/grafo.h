@@ -13,11 +13,13 @@ typedef par fila;
 class Graph{
     private:
         //Lista de adyacencia
+        int N = 10000;
         int nroVertices;
         list<fila> *listaAdyacencia;
+        bool esDigrafo;
     
     public:
-        Graph(int);
+        Graph(int, bool);
         ~Graph();
         void insertarArista(int, int, int);
         void imprimirListaAdyacencia();
@@ -26,5 +28,9 @@ class Graph{
         void bfs(int);
         bool existeCircuito();
         bool buscaCircuitoDfs(int, int, bool*);
+        bool bicolorable();
+        bool dfsColor(int, int, int*);
+        int minDistance(int*, bool*);
+        void dijkstra(int);
 };
 #endif
